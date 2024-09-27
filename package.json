@@ -2,11 +2,11 @@
   "name": "support-tickets",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Maiqui Tomé",
   "license": "ISC",
-  "description": ""
+  "description": "API de gerenciamento de tickets de suporte"
 }
