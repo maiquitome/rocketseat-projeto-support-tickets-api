@@ -1,10 +1,12 @@
 import http from "node:http"; // indica que o http faz parte do node, que não é uma dependência externa
 
 import { jsonHandler } from "./middlewares/jsonHandler.js";
+import { routeHandler } from "./middlewares/routeHandler.js";
 
 async function listener(request, response) {
   await jsonHandler(request, response);
   console.log(request.body);
+  routeHandler(request, response);
 }
 
 // const server = http.createServer((request, response) => {
